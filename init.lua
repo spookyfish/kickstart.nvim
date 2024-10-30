@@ -933,6 +933,15 @@ require('lazy').setup({
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   --    For additional information, see `:help lazy.nvim-lazy.nvim-structuring-your-plugins`
   {
+    "christoomey/vim-tmux-navigator",
+    vim.keymap.set('n', 'C-h', ':TmuxNavigateLeft<CR>'),
+    vim.keymap.set('n', 'C-j', ':TmuxNavigateDown<CR>'),
+    vim.keymap.set('n', 'C-k', ':TmuxNavigateUp<CR>'),
+    vim.keymap.set('n', 'C-l', ':TmuxNavigateRight<CR>'),
+  },
+
+
+  {
     'MeanderingProgrammer/render-markdown.nvim',
     dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' }, -- if you use the mini.nvim suite
     -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' }, -- if you use standalone mini plugins
