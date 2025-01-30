@@ -634,6 +634,8 @@ require('lazy').setup({
             },
           },
         },
+
+        intelephense = {},
       }
 
       -- Ensure the servers and tools above are installed
@@ -650,6 +652,7 @@ require('lazy').setup({
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
         'rust_analyzer',
+        'intelephense',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
