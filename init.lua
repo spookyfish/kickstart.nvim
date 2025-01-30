@@ -635,7 +635,15 @@ require('lazy').setup({
           },
         },
 
-        intelephense = {},
+        intelephense = {
+          settings = {
+            intelephense = {
+              format = {
+                enable = false,
+              },
+            },
+          },
+        },
       }
 
       -- Ensure the servers and tools above are installed
